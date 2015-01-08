@@ -1,3 +1,5 @@
+##reading data
+household_power_consumption <- read.csv("~/R_data/household_power_consumption.txt", sep=";")
 ##creating a Date1 as date  The Date has 16/12/2006 and Date1 2007-02-01
 household_power_consumption$Date1 <-as.Date(strptime(household_power_consumption$Date,"%d/%m/%Y"))
 ##Creating hsc which is a subset of household_power_consumption but contains only the needed months for the project
